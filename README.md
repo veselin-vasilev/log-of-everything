@@ -1,3 +1,12 @@
+#### 22 April 2022
+* [Using Event-Driven Design with Apache Kafka Streaming Applications ft. Bobby Calderwood
+](https://developer.confluent.io/podcast/using-event-driven-design-with-apache-kafka-streaming-applications-ft-bobby-calderwood)
+  * It rehashes a lot of what I've already read in [[Designing Event-driven Systems]] or [[Jay Kreps]]' "The log...". 
+  * The analogy of the chessboard [[Bobby Calderwood]] used was really good. Basically, the board, the pieces, and the current state are your data model. The event model is concerned with modelling how to capture each move by the players. 
+  * Learned about [oNote](https://www.onote.com/) which might prove useful in the future. It's an event modelling tool. 
+  * [Event modelling](https://eventmodeling.org/) itself is a new concept and process which is worth learning more about.
+  * There are other useful links on the episode page!
+
 #### 5 April 2022
 * Read [Staff Engineering at Carta](https://medium.com/building-carta/staff-engineering-at-carta-526b154fd317). It was an interesting insight into how [[Carta]]'s engineers operate at this level of seniority. It rehashed a lot of content from [[Will Larson]]'s  [staffeng.com](https://staffeng.com). 
 	* *Alone, the term “staff engineer” only describes your level, not your role. A staff engineer may align with more than one of these archetypes, or change over time. It is important to recognize that **these are modes of operation that describe your work** — they are not a career path.* (emphasis is mine)

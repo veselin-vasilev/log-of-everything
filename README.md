@@ -6,6 +6,7 @@
   * Learned about [oNote](https://www.onote.com/) which might prove useful in the future. It's an event modelling tool. 
   * [Event modelling](https://eventmodeling.org/) itself is a new concept and process which is worth learning more about.
   * There are other useful links on the episode page!
+* [List of Markdown emoji in GitHub](https://gist.github.com/rxaviers/7360908)
 
 #### 5 April 2022
 * Read [Staff Engineering at Carta](https://medium.com/building-carta/staff-engineering-at-carta-526b154fd317). It was an interesting insight into how [[Carta]]'s engineers operate at this level of seniority. It rehashed a lot of content from [[Will Larson]]'s  [staffeng.com](https://staffeng.com). 

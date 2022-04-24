@@ -1,6 +1,6 @@
 #### 22 April 2022
 * [Using Event-Driven Design with Apache Kafka Streaming Applications ft. Bobby Calderwood
-](https://developer.confluent.io/podcast/using-event-driven-design-with-apache-kafka-streaming-applications-ft-bobby-calderwood)
+](https://developer.confluent.io/podcast/using-event-driven-design-with-apache-kafka-streaming-applications-ft-bobby-calderwood)✅
   * It rehashes a lot of what I've already read in [[Designing Event-driven Systems]] or [[Jay Kreps]]' "The log...". 
   * The analogy of the chessboard [[Bobby Calderwood]] used was really good. Basically, the board, the pieces, and the current state are your data model. The event model is concerned with modelling how to capture each move by the players. 
   * Learned about [oNote](https://www.onote.com/) which might prove useful in the future. It's an event modelling tool. 
@@ -10,9 +10,9 @@
 
 
 #### 6 April 2022 - 21 April 2022
-* [What is the difference between a DTO and a POCO (or POJO)](https://ardalis.com/dto-or-poco/) by [[Ardalis]]
+* [What is the difference between a DTO and a POCO (or POJO)](https://ardalis.com/dto-or-poco/)✅ by [[Ardalis]]
 	* Nothing I didn't already know, but it is nice to have this summarization that I can refer to.
-	* It also pointed me in the direction of [Persistance Ignorance](https://deviq.com/principles/persistence-ignorance), which is an idea I have implicitly adhered to, but never had the name for it. 
+	* It also pointed me in the direction of [Persistance Ignorance](https://deviq.com/principles/persistence-ignorance)✅, which is an idea I have implicitly adhered to, but never had the name for it. 
 		* *The principle of Persistence Ignorance (PI) holds that classes modeling the business domain in a software application should not be impacted by how they might be persisted. Thus, their design should reflect as closely as possible the ideal design needed to solve the business problem at hand, and should not be tainted by concerns related to how the objects' state is saved and later retrieved.*
 	* This also reminded me of [DevIQ](https://deviq.com) - *a reference site designed to help you learn about high-level software development topics like domain driven design, design patterns, and antipatterns.* 
 		* It could be a useful resource, and could spare me the effort of doing something like this myself.
@@ -20,7 +20,8 @@
 	* #engineering
 
 #### 5 April 2022
-* Read [Staff Engineering at Carta](https://medium.com/building-carta/staff-engineering-at-carta-526b154fd317). It was an interesting insight into how [[Carta]]'s engineers operate at this level of seniority. It rehashed a lot of content from [[Will Larson]]'s  [staffeng.com](https://staffeng.com). 
+* [Staff Engineering at Carta](https://medium.com/building-carta/staff-engineering-at-carta-526b154fd317)✅. 
+	* It was an interesting insight into how [[Carta]]'s engineers operate at this level of seniority. It rehashed a lot of content from [[Will Larson]]'s  [staffeng.com](https://staffeng.com). 
 	* *Alone, the term “staff engineer” only describes your level, not your role. A staff engineer may align with more than one of these archetypes, or change over time. It is important to recognize that **these are modes of operation that describe your work** — they are not a career path.* (emphasis is mine)
 	* There was also an interesting link to a presentation: [Role and Influence: The IC trajectory beyond Staff](https://leaddev.com/leaddev-live/role-and-influence-ic-trajectory-beyond-staff). Should find the time to watch it at some point. 
 	* I also liked the link to [Engineering Ladders](http://www.engineeringladders.com) and how they've defined the 5 axes for an engineer's development: 
@@ -32,7 +33,7 @@
 	* #career #staff
 
 #### 3 April 2022
-* Read the [guides](https://staffeng.com/guides) portion of [staffeng.com](https://staffeng.com) by [[Will Larson]]. It is definitely a great resource, one that I will keep coming back to as my career progresses. When the time comes to consider aiming for a Staff of Principal position (if this is still my inclination years in the future), it will definitely be reread.  
+* Read the [guides](https://staffeng.com/guides)✅ portion of [staffeng.com](https://staffeng.com) by [[Will Larson]]. It is definitely a great resource, one that I will keep coming back to as my career progresses. When the time comes to consider aiming for a Staff of Principal position (if this is still my inclination years in the future), it will definitely be reread.  
 * I am still to make my way through the [Stories](https://staffeng.com/stories) section.
 * As with a lot of technical books, the [resources](https://staffeng.com/guides/learning-materials) section is where *a lot* of added value can be found. I will regularly come back to it for inspiration on things to read or watch.
 
@@ -40,32 +41,31 @@
 * [Fallacies of distributed computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing)
 	* Useful to keep as a reference of things to keep in mind!
 	* #engineering  #distributed-systems 
-* 
 
 #### 1 April 2022
-* [Embedded Finance](https://risksave.com/news/2022/3/25/embedded-finance)
+* [Embedded Finance](https://risksave.com/news/2022/3/25/embedded-finance)✅
 	* Article shared by [[Currencyclours]]'s [[LinkedIn]] account. 
 	* Written by a partner of theirs - [[RiskSave Technologies]]
 	* Outlines what embedded finance means for the fintechs of the world and how it's likely becoming a big thing in a lot of offerings, both traditionally financial and not.
 	* *If you’ve used a popular ride-sharing app or taxi service or enjoyed a take-away from [Deliveroo](https://deliveroo.co.uk/), then you’ve benefited from embedded finance.*
 	* #finance #fintech 
-* [Embedded Finance: What It Is And How To Get It Right](https://www.forbes.com/sites/forbesfinancecouncil/2021/08/27/embedded-finance-what-it-is-and-how-to-get-it-right/?sh=6a6cb2173677)
+* [Embedded Finance: What It Is And How To Get It Right](https://www.forbes.com/sites/forbesfinancecouncil/2021/08/27/embedded-finance-what-it-is-and-how-to-get-it-right/?sh=6a6cb2173677)✅
 	* A [[Forbes]] article on embedded finance.
 	* *Simply put, embedded finance is the use of financial tools or services — such as lending or payment processing — by a non-financial provider. For example, an electrical shop could offer point-of-service insurance for goods sold in-store.*
 	* #finance #fintech 
-* [The Log: What every software engineer should know about real-time data's unifying abstraction](# The Log: What every software engineer should know about real-time data's unifying abstraction) by [[Jay Kreps]]
+* [The Log: What every software engineer should know about real-time data's unifying abstraction](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)✅ by [[Jay Kreps]]
 	* An incredible piece of technical knowledge, it is a must read!
 	* It is basically a summary of the ideas presented in the [Designing Event Driven Systems] book by [[Ben Stopford]]. Though a "summary" is probably not the right word - Kreps' article predates the book. The book merely expands all that is said in the article!
 	* **The resources at the end are brilliant as well, probably most of them worth reading or looking into!**
 	* #software-architecture #distributed-systems #kafka
-* [[Designing Event Driven Systems]] by [[Ben Stopford]]
+* [[Designing Event Driven Systems]]✅ by [[Ben Stopford]]
 	* In [O'Reilly](https://learning.oreilly.com/library/view/designing-event-driven-systems/9781492038252/ )
 	* Can also be downloaded for free from [Confluent](https://www.confluent.io/designing-event-driven-systems/).
 	* A good book, which summarizes a lot of ideas about modern software architecture and distributed systems. Definitely highly recommended!
 	* #software-architecture #distributed-systems #kafka
 
 #### 31 Mar 2022
-* [Anna Karenina principle](https://en.wikipedia.org/wiki/Anna_Karenina_principle)
+* [Anna Karenina principle](https://en.wikipedia.org/wiki/Anna_Karenina_principle)✅
 	* *All happy families are alike; each unhappy family is unhappy in its own way.*
 	* *The **Anna Karenina principle** states that a deficiency in any [one of a number of factors](https://en.wikipedia.org/wiki/Limiting_factor "Limiting factor") dooms an endeavor to failure. Consequently, a successful endeavor (subject to this principle) is one for which every possible deficiency has been avoided.
 	* I found this out from [[Jay Kreps]]'s article about logs [The Log: What every software engineer should know about real-time data's unifying abstraction](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying). He phrased it like this: *"Each working data pipeline is designed like a log; each broken data pipeline is broken in its own way."*
@@ -82,9 +82,9 @@
 	* #software-architecture #engineering #distributed-systems 
 
 #### Unspecified timeframe
-* [Philosophy of Software Design](https://www.amazon.com/dp/173210221X) by [[John Ousterhout]]
+* [Philosophy of Software Design](https://www.amazon.com/dp/173210221X)✅ by [[John Ousterhout]]
 	* Truly a gem of a book!
-	* It made me rethink some of the attitudes I had maintained towards software engineering (most of which had been influenced by [[Uncle Bob]]. I now think that this book is a next-level read after [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1?keywords=clean+code&qid=1650805147&s=books&sr=1-1). Just as Clean Code is arguably needed and helpful to a more junior dev, Philosophy.. is needed to make you rethink what Clean Code preaches, evaluate it with your experience, discard what doesn't makes sense, and reconcile the rest. 
+	* It made me rethink some of the attitudes I had maintained towards software engineering (most of which had been influenced by [[Uncle Bob]]. I now think that this book is a next-level read after [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1?keywords=clean+code&qid=1650805147&s=books&sr=1-1)✅. Just as Clean Code is arguably needed and helpful to a more junior dev, Philosophy.. is needed to make you rethink what Clean Code preaches, evaluate it with your experience, discard what doesn't makes sense, and reconcile the rest. 
 	* [[John Ousterhout]]'s [website](https://web.stanford.edu/~ouster/cgi-bin/home.php).
 		* The [publications](https://web.stanford.edu/~ouster/cgi-bin/publications.php) page is a treasure trove of resources. 
 	* #engineering

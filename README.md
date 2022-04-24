@@ -8,6 +8,17 @@
   * There are other useful links on the episode page!
 * [List of Markdown emoji in GitHub](https://gist.github.com/rxaviers/7360908)
 
+
+#### 6 April 2022 - 21 April 2022
+* [What is the difference between a DTO and a POCO (or POJO)](https://ardalis.com/dto-or-poco/) by [[Ardalis]]
+	* Nothing I didn't already know, but it is nice to have this summarization that I can refer to.
+	* It also pointed me in the direction of [Persistance Ignorance](https://deviq.com/principles/persistence-ignorance), which is an idea I have implicitly adhered to, but never had the name for it. 
+		* *The principle of Persistence Ignorance (PI) holds that classes modeling the business domain in a software application should not be impacted by how they might be persisted. Thus, their design should reflect as closely as possible the ideal design needed to solve the business problem at hand, and should not be tainted by concerns related to how the objects' state is saved and later retrieved.*
+	* This also reminded me of [DevIQ](https://deviq.com) - *a reference site designed to help you learn about high-level software development topics like domain driven design, design patterns, and antipatterns.* 
+		* It could be a useful resource, and could spare me the effort of doing something like this myself.
+		* Also, I could use it to refer junior devs towards a good resource for some fundamental practices and principles in software development.
+	* #engineering
+
 #### 5 April 2022
 * Read [Staff Engineering at Carta](https://medium.com/building-carta/staff-engineering-at-carta-526b154fd317). It was an interesting insight into how [[Carta]]'s engineers operate at this level of seniority. It rehashed a lot of content from [[Will Larson]]'s  [staffeng.com](https://staffeng.com). 
 	* *Alone, the term “staff engineer” only describes your level, not your role. A staff engineer may align with more than one of these archetypes, or change over time. It is important to recognize that **these are modes of operation that describe your work** — they are not a career path.* (emphasis is mine)
@@ -69,4 +80,11 @@
 	* #kafka #software-architecture #engineering #distributed-systems 
 * [IN-STREAM BIG DATA PROCESSING](https://highlyscalable.wordpress.com/2013/08/20/in-stream-big-data-processing/)
 	* #software-architecture #engineering #distributed-systems 
+
+#### Unspecified timeframe
+* [Philosophy of Software Design](https://www.amazon.com/dp/173210221X) by [[John Ousterhout]]
+	* Truly a gem of a book!
+	* It made me rethink some of the attitudes I had maintained towards software engineering (most of which had been influenced by [[Uncle Bob]]. I now think that this book is a next-level read after [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1?keywords=clean+code&qid=1650805147&s=books&sr=1-1). Just as Clean Code is arguably needed and helpful to a more junior dev, Philosophy.. is needed to make you rethink what Clean Code preaches, evaluate it with your experience, discard what doesn't makes sense, and reconcile the rest. 
+	* [[John Ousterhout]]'s [website](https://web.stanford.edu/~ouster/cgi-bin/home.php).
+		* The [publications](https://web.stanford.edu/~ouster/cgi-bin/publications.php) page is a treasure trove of resources. 
 

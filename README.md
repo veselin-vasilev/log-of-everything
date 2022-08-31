@@ -18,7 +18,7 @@
 * Suppression tutorial -> https://www.confluent.io/blog/kafka-streams-take-on-watermarks-and-triggers/
 * This has anwer to wall-clock time processing with Kafka Streams -> https://engineering.wingify.com/posts/kafka-streams-stateful-ingestion-with-processor-api/
 * [Testing Kafka Streams](https://kafka.apache.org/22/documentation/streams/developer-guide/testing.html)✅
-* ! [Running Streams Applications](https://kafka.apache.org/documentation/streams/developer-guide/running-app.html)✅
+* ![Running Streams Applications](https://kafka.apache.org/documentation/streams/developer-guide/running-app.html)✅
   * Answers a lot of the basic questions around Kafka streams - what happens if a consumer dies, how are stream tasks migrated, etc.
 * [Kafka Streams Architecture](https://kafka.apache.org/32/documentation/streams/architecture)✅
 * [Event Storming - Alberto Brandolini - DDD Europe 2019](https://www.youtube.com/watch?v=mLXQIYEwK24)✅

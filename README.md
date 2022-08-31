@@ -1,3 +1,57 @@
+#### April - August 2022
+* [How to filter a stream of events](https://developer.confluent.io/tutorials/filter-a-stream-of-events/kstreams.html#run-your-app-to-confluent-cloud)✅
+  * Describes different approaches to filter a stream using Kafka - Streams, ksqlDB.
+* [How to Choose Between Strict and Dynamic Schemas](https://www.confluent.io/blog/spring-kafka-protobuf-part-1-event-data-modeling/)🔴
+  * Seems like a great article on event modelling.
+* [buf CLI](https://github.com/bufbuild/buf)
+* [Kafka quickstart with Docker](https://developer.confluent.io/quickstart/kafka-docker/)🔴
+* [My Python/Java/Spring/Go/Whatever Client Won’t Connect to My Apache Kafka Cluster in Docker/AWS/My Brother’s Laptop. Please Help!](https://www.confluent.io/blog/kafka-client-cannot-connect-to-broker-on-aws-on-docker-etc/)🔴
+  * The title can be a bit misleading - this is as much a troubleshooting article, as it is an insight into how the Kafka client connects.
+* [Protobuf Schema Serializer and Deserializer](https://docs.confluent.io/platform/current/schema-registry/serdes-develop/serdes-protobuf.html)
+* [JSON to Proto object](https://stackoverflow.com/questions/28545401/java-json-protobuf-back-conversion)
+* Loading a file from resources folder -> https://stackoverflow.com/questions/15749192/how-do-i-load-a-file-from-resource-folder
+  * The Spring solution was what I needed
+* [A Guide to Kafka Streams and Its Uses](https://www.confluent.io/blog/how-kafka-streams-works-guide-to-stream-processing/)
+* [Amazon Principle Engineering community tenets](https://www.amazon.jobs/en/landing_pages/pe-community-tenets)🔴
+* [Saxo Bank’s Best Practices for a Distributed Domain-Driven Architecture Founded on the Data Mesh](https://www.confluent.io/en-gb/blog/distributed-domain-driven-architecture-data-mesh-best-practices/)🔴
+* Kafka streams deliberations for wall clock time windowing -> https://cwiki.apache.org/confluence/display/KAFKA/KIP-424%3A+Allow+suppression+of+intermediate+events+based+on+wall+clock+time 
+* Suppression tutorial -> https://www.confluent.io/blog/kafka-streams-take-on-watermarks-and-triggers/
+* This has anwer to wall-clock time processing with Kafka Streams -> https://engineering.wingify.com/posts/kafka-streams-stateful-ingestion-with-processor-api/
+* [Testing Kafka Streams](https://kafka.apache.org/22/documentation/streams/developer-guide/testing.html)✅
+* ! [Running Streams Applications](https://kafka.apache.org/documentation/streams/developer-guide/running-app.html)✅
+  * Answers a lot of the basic questions around Kafka streams - what happens if a consumer dies, how are stream tasks migrated, etc.
+* [Kafka Streams Architecture](https://kafka.apache.org/32/documentation/streams/architecture)✅
+* [Event Storming - Alberto Brandolini - DDD Europe 2019](https://www.youtube.com/watch?v=mLXQIYEwK24)✅
+  * Some knowledge gaps illustrated for me:
+    * I need a concrete definition of a "bounded context"
+    * I need a concrete definition of an "aggregate'. 
+      * The [DDD_Aggregate](https://martinfowler.com/bliki/DDD_Aggregate.html) article by [[Martin Fowler]] is the best I've found so far.
+  * Stages: big picture; process modelling; software design modelling?
+  * Interesting point about the obvious solution at [28:20] - if it's too obvious, there's probably some issues with it, otherwise it likely would have been done already - nobody enjoys wasting millions of dollars.
+  * "If you can't choose which of the two solutions is better, you need to make the problem harder so you have a clear winner": [31:30]
+  * Summary: "Merge the people, split the software (around events, not data)."
+* Stripe's blog [Designing robust and predictable APIs with idempotency](https://stripe.com/blog/idempotency)✅
+* [JDBC Source Connector: What could go wrong?](https://www.confluent.io/en-gb/events/kafka-summit-london-2022/jdbc-source-connector-what-could-go-wrong/)✅
+  * Truly great talk, it managed to explain the problems with the JDBC connector in a simple and entertaining way. It also opened my eyes to what the difference is with the Debezium connector (I used to think the JDBC connector was based on CDC as well...)
+* [No More Silos: How to Integrate Your Databases with Apache Kafka and CDC](https://www.confluent.io/blog/no-more-silos-how-to-integrate-your-databases-with-apache-kafka-and-cdc/)🔴
+* "Preserve case" option in IntelliJ Find + Replace ! -> if your search matches across both upper/lowercase, it will preserve the casing! Awesome!
+  * #tips-and-tricks
+* IntelliJ visual select -> will only do Find + Replace within the section you've highlighted. Awesome!
+  * #tips-and-tricks
+* [https://awsu.me/](https://awsu.me/)
+  * #tools
+* [lazydocker](https://github.com/jesseduffield/lazydocker)
+  * #tools
+* [Sampling bias](https://sketchplanations.com/sampling-bias)
+  * Interesting resource to refer to (and to be aware of the sampling bias concept overall!)
+* [asdf](https://asdf-vm.com/guide/introduction.html) to manage CLI tool versions
+  * #tools
+* [Vim cheatsheet](https://vim.rtorr.com/)
+  * #tools
+* [immudb whitepaper](https://codenotary.s3.amazonaws.com/Research-Paper-immudb-CodeNotary_v3.0.pdf)🔴
+  * An immutable database, seems interesting!
+
+
 #### 22 April 2022
 * [Using Event-Driven Design with Apache Kafka Streaming Applications ft. Bobby Calderwood
 ](https://developer.confluent.io/podcast/using-event-driven-design-with-apache-kafka-streaming-applications-ft-bobby-calderwood)✅

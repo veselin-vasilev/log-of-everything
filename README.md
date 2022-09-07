@@ -1,3 +1,16 @@
+#### Sep 2022
+* [The Canada Principle](https://marcrandolph.com/the-canada-principle/)✅
+  * First heard about it in [[Marc Randolph]]'s book [[That will never work]] about Netflix's early years.
+  * This is a handly link to sum it up nicely. 
+  * *We called this The Canada Principle and it served as a constant reminder to us to make sure we didn’t run around chasing what appeared to be low hanging fruit, all the while taking our eyes off what was truly important in scaling our business.*
+  * #guidelines
+* [From Monolith to State-of-the-Art Banking • Flavio Deroo • GOTO 2022](https://www.youtube.com/watch?v=gVucnhnyYTw)✅ 
+  * [16:00] - quite an interesting point about how they handle their events by aggregating all past events in the last event.
+    * Each event chain has an `aggregate_id` and a `sequence` number. 
+    * This forces events to be read/processed in sequence, but it gives you immutability guarantees because of the append-only nature of the flow.
+      * *Is there a danger that events will become too big?*
+    * Overall it was a good session, especially the middle part where he talked about Event-Sourcing and the different projections they have on top of the events.
+
 #### April - August 2022
 * [How to filter a stream of events](https://developer.confluent.io/tutorials/filter-a-stream-of-events/kstreams.html#run-your-app-to-confluent-cloud)✅
   * Describes different approaches to filter a stream using Kafka - Streams, ksqlDB.

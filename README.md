@@ -34,6 +34,11 @@
   * ![](images/Local publish with async router.png)
   * What I don’t get for the ^ is why will the remote publish not work when it’s through a tunnel directly to a remote Kafka cluster, but it will work when publishing locally, and then the Region Router passing it to the other region? If US-East is down, so is the Region Router - so what’s the difference?
       * He says “all events of a single playback session can be processed together” - but why is this not possible with the remote tunnel?
+  * #kafka #distributed-systems 
+* [event-ruler](https://github.com/aws/event-ruler/)
+  * [AWS Announcement](https://aws.amazon.com/blogs/opensource/open-sourcing-event-ruler/)
+  * Looks really cool, could be a way to handle generic events/requests coming through and generating actions from them.
+  * #tools
 
 #### April - August 2022
 * [How to filter a stream of events](https://developer.confluent.io/tutorials/filter-a-stream-of-events/kstreams.html#run-your-app-to-confluent-cloud)✅

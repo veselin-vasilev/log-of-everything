@@ -3,13 +3,37 @@
   * First heard about it in [[Marc Randolph]]'s book [[That will never work]] about Netflix's early years.
   * This is a handly link to sum it up nicely. 
   * *We called this The Canada Principle and it served as a constant reminder to us to make sure we didn’t run around chasing what appeared to be low hanging fruit, all the while taking our eyes off what was truly important in scaling our business.*
-  * #guidelines
+  * \#guidelines
 * [From Monolith to State-of-the-Art Banking • Flavio Deroo • GOTO 2022](https://www.youtube.com/watch?v=gVucnhnyYTw)✅ 
   * [16:00] - quite an interesting point about how they handle their events by aggregating all past events in the last event.
     * Each event chain has an `aggregate_id` and a `sequence` number. 
     * This forces events to be read/processed in sequence, but it gives you immutability guarantees because of the append-only nature of the flow.
       * *Is there a danger that events will become too big?*
     * Overall it was a good session, especially the middle part where he talked about Event-Sourcing and the different projections they have on top of the events.
+* [Microservices to async processing migration at scale](https://www.infoq.com/presentations/migration-microservices-scale/)✅
+  * If you need to guarantee you get the most robust results, you might require an acknowledgment from all brokers
+      * However, this takes time!
+  * ![](images/Challenges in.png)
+  * Processing latencies
+      * You can provision for peak and handle any load which comes your way
+          * Good if you have a relatively static load without many large surges.
+      * Or, you can autoscale
+  * Autoscaling your consumers
+      * The tradeoff there is resource efficiency vs taking the hit on partition rebalancing (i.e. the rebalance process takes time and slows down the overall process)
+      * If you’re doing stateful operations, you have more work do to during a rebalance
+          * When you get the rebalance indication, you need to both commit your Kafka offsets, and also ensure to pass on whatever state you have, so it can be reloaded from another consumer after the rebalance.
+      * If you’re doing stateless operations, or you persist state externally, then you will likely be fine letting the rebalance go its way automatically.
+          * Worst case is you might get into a situation where you haven’t committed that you’ve handled some messages, which means that another consumer will pick these up (when it gets assigned the same partition) and process them again. If your processing is idempotent, or you don’t care about duplicates, then you have no issue.
+      * Lag might be considered a good metric to determine the , and it is good to scale up, but it is difficult to scale down based on it. If your lag is 0, how do you know how much to scale down? You can flip-flop between the number of consumers, that’s a lot of overhead.
+      * Proxy metrics - CPU or rps (records per second) work better
+          * Rps - based on how many records are processed per second, so based on that you can decide whether to add a new node based on that
+      * A few rebalances a day are okay, more means you’re spending a lot of time repartitioning/processing duplicate records.
+      * Netflix autoscaler aggressively scales up when the load increases, because they don’t want to be scaling up during a high-load period. They scale down slowly later.
+  * ![](images/Small error rates can be retried.png)
+  * ![](images/One region for all events of a session.png)
+  * ![](images/Local publish with async router.png)
+  * What I don’t get for the ^ is why will the remote publish not work when it’s through a tunnel directly to a remote Kafka cluster, but it will work when publishing locally, and then the Region Router passing it to the other region? If US-East is down, so is the Region Router - so what’s the difference?
+      * He says “all events of a single playback session can be processed together” - but why is this not possible with the remote tunnel?
 
 #### April - August 2022
 * [How to filter a stream of events](https://developer.confluent.io/tutorials/filter-a-stream-of-events/kstreams.html#run-your-app-to-confluent-cloud)✅

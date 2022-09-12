@@ -7,7 +7,6 @@
     * Related SO questions:
       * https://stackoverflow.com/questions/51289856/spring-application-properties-ignoring-slashes-in-strings
       * https://stackoverflow.com/questions/65346054/ignore-specify-slash-character-in-yaml-config-for-spring-boot-admin-application 
-    * 
 
 #### 05 Sep 2022 - 
 * [The Canada Principle](https://marcrandolph.com/the-canada-principle/)✅

@@ -1,4 +1,15 @@
-#### Sep 2022
+#### 12 Sep 2022 - 
+* Spring Boot [Relaxed Binding](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.external-config.typesafe-configuration-properties.relaxed-binding)
+  * _Spring Boot uses some relaxed rules for binding Environment properties to @ConfigurationProperties beans, so there does not need to be an exact match between the Environment property name and the bean property name. Common examples where this is useful include dash-separated environment properties (for example, context-path binds to contextPath), and capitalized environment properties (for example, PORT binds to port)._
+  * Also should be noted that kebab-case is the recommended syntax in `.properties` and `.yml` files (outlined in Table 3 and the `Tip` section at time of writing). Useful if you ever need a reference for this with regards to Spring Boot.
+  * #spring-boot
+  * [Relaxed Binding 2.0](https://github.com/spring-projects/spring-boot/wiki/Relaxed-Binding-2.0) highlights some interesting properties of how Spring does relaxed binding. The thing that tripped me up originally was YAML maps - it would remove some characters from the keys, such as forward slash (`/`). To stop it from doing so, I had to wrap the key in `[]`.
+    * Related SO questions:
+      * https://stackoverflow.com/questions/51289856/spring-application-properties-ignoring-slashes-in-strings
+      * https://stackoverflow.com/questions/65346054/ignore-specify-slash-character-in-yaml-config-for-spring-boot-admin-application 
+    * 
+
+#### 05 Sep 2022 - 
 * [The Canada Principle](https://marcrandolph.com/the-canada-principle/)✅
   * First heard about it in [[Marc Randolph]]'s book [[That will never work]] about Netflix's early years.
   * This is a handly link to sum it up nicely. 

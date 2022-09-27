@@ -1,3 +1,19 @@
+#### 26 Sep 2022 - 
+* [Microservices and the Inverse Conway Manoeuvre • James Lewis • GOTO 2015](https://www.youtube.com/watch?v=uicjqeZO690)✅
+  * "_There is nothing so useless as doing efficiently that which should not be done at all_" - Peter Drucker
+  * The talk can pretty much be summarised with: _"Design the organisation you want, the architecture will follow (kicking and screaming)" - The Inverse Conway Manoeuvre_ - Evan Botcher.
+  * He's essentially saying what's been said by many agile/DevOps practitioners - put the people who need to work together - together. Remove the artificial walls between departments (IT, Finance, Customer, etc.) and unite people around products. It's cross-functionality at a higher abstraction than a software team. A lot of organisations brought QA ands and Devs and BAs etc. and the next logical step is to bring together everyone else who is needed to build a product. 
+  * He also talked about the difference in mindset between "project thinking" and "product thinking". Essentialy project thinking is a short-term view of "let's get together to solve a task and move on", and that's not a great way to approach software systems. Further explained by this quote: "_Most application development efforts that we see use a project model: where the aim is to deliver some piece of software which is then considered to be completed. On completion the software is handed over to a maintenance organization and the project team that built it is disbanded._" from [Microservices](https://martinfowler.com/articles/microservices.html) on Martin Fowler's website.
+    * The product thinking mindset is captured by this quote: "_The product mentality, ties in with the linkage to business capabilities. Rather than looking at the software as a set of functionality to be completed, there is an on-going relationship where the question is how can software assist its users to enhance the business capability._"
+  * #microservices
+
+#### 19 Sep 2022
+* [Applying the Saga Pattern • Caitie McCaffrey • GOTO 2015](https://www.youtube.com/watch?v=xDuwrtwYHu8)
+  * A great overview and demo of the Saga pattern.
+  * "_A Saga is a Long Lived Transaction that can be written as a sequence of transactions that can be interleaved. All transactions in the sequence complete successfully or compensating transactions are ran to amend a partial execution_"
+  * "_Sagas are a Failure Management Patter_"
+  * #distributed-systems
+
 #### 12 Sep 2022 - 
 * Spring Boot [Relaxed Binding](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.external-config.typesafe-configuration-properties.relaxed-binding)
   * _Spring Boot uses some relaxed rules for binding Environment properties to @ConfigurationProperties beans, so there does not need to be an exact match between the Environment property name and the bean property name. Common examples where this is useful include dash-separated environment properties (for example, context-path binds to contextPath), and capitalized environment properties (for example, PORT binds to port)._

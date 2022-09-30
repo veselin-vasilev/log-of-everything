@@ -6,6 +6,10 @@
   * He also talked about the difference in mindset between "project thinking" and "product thinking". Essentialy project thinking is a short-term view of "let's get together to solve a task and move on", and that's not a great way to approach software systems. Further explained by this quote: "_Most application development efforts that we see use a project model: where the aim is to deliver some piece of software which is then considered to be completed. On completion the software is handed over to a maintenance organization and the project team that built it is disbanded._" from [Microservices](https://martinfowler.com/articles/microservices.html) on Martin Fowler's website.
     * The product thinking mindset is captured by this quote: "_The product mentality, ties in with the linkage to business capabilities. Rather than looking at the software as a set of functionality to be completed, there is an on-going relationship where the question is how can software assist its users to enhance the business capability._"
   * #microservices
+* [Gist for StructuredArguments and Markers and integration with DD](https://gist.github.com/veselin-vasilev/6ae2320a0c4f8bdbe8ece2284c38961b)
+* [Gist for IntelliJ Search and Replace Regex](https://gist.github.com/veselin-vasilev/ab25d06879cecf19c3bd9fc1cae0e8b1)
+* [Gist for GitHub Workflow templates](https://gist.github.com/veselin-vasilev/a561d6a51764c9999f8144d8c6cd8f86)
+* [Gist for Java time API tidbits](https://gist.github.com/veselin-vasilev/92bb56531ee4ffac1d37eaef5f7d5adc) 
 
 #### 19 Sep 2022
 * [Applying the Saga Pattern • Caitie McCaffrey • GOTO 2015](https://www.youtube.com/watch?v=xDuwrtwYHu8) ✅

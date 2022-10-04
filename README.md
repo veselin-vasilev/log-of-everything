@@ -1,3 +1,8 @@
+#### 03 Oct 2022 - 
+* [Pluralsight's getting started with JShell, some useful tidbits in there](https://www.pluralsight.com/guides/getting-started-with-jshell-part-3) ✅
+* [JShell Tutorial](http://cr.openjdk.java.net/~rfield/tutorial/JShellTutorial.html#introduction)
+  * Quite a comprehensive tutorial, the Pluralsight is based on it, so this could be treated as the "source of truth".
+
 #### 26 Sep 2022 - 
 * [Microservices and the Inverse Conway Manoeuvre • James Lewis • GOTO 2015](https://www.youtube.com/watch?v=uicjqeZO690) ✅
   * "_There is nothing so useless as doing efficiently that which should not be done at all_" - Peter Drucker

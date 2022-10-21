@@ -1,3 +1,8 @@
+#### 17 Oct 2022 - 
+* [Gist for Redis multiset with expiry](https://gist.github.com/veselin-vasilev/4ee80b31c3961fdf8be3756d448528d2)
+* [Gist Mockito callback argument matching](https://gist.github.com/veselin-vasilev/00493e3ad1d7b68154ba7c0ad671d497)
+
+
 #### 03 Oct 2022 - 
 * [Pluralsight's getting started with JShell, some useful tidbits in there](https://www.pluralsight.com/guides/getting-started-with-jshell-part-3) ✅
 * [JShell Tutorial](http://cr.openjdk.java.net/~rfield/tutorial/JShellTutorial.html#introduction)

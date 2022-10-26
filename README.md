@@ -1,3 +1,9 @@
+### 24 Oct 2022 - 
+* Property-based testing
+  * A colleague presented this approach to testing at work, and I thought it is quite interesting. Not necessarily something that applies to all scenarios, but when it does, it can be quite helpful.
+  * From what I understand, non-Java languages and ecosystems are better evolved in this area, but there are Java libraries for this. The one shared with me was [jqwik](https://jqwik.net/). 
+    * _Property-Based Testing tries to combine the intuitiveness of Microtests with the effectiveness of randomized, generated test data. Originally driven by the common hype about functional programming, PBT has meanwhile been recognized as an important ingredient of any up-to-date testing approach._
+
 #### 17 Oct 2022 - 
 * [Gist for Redis multiset with expiry](https://gist.github.com/veselin-vasilev/4ee80b31c3961fdf8be3756d448528d2)
 * [Gist Mockito callback argument matching](https://gist.github.com/veselin-vasilev/00493e3ad1d7b68154ba7c0ad671d497)

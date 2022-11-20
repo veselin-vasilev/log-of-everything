@@ -1,3 +1,91 @@
+### 24 Oct 2022 - 
+* Property-based testing
+  * A colleague presented this approach to testing at work, and I thought it is quite interesting. Not necessarily something that applies to all scenarios, but when it does, it can be quite helpful.
+  * From what I understand, non-Java languages and ecosystems are better evolved in this area, but there are Java libraries for this. The one shared with me was [jqwik](https://jqwik.net/). 
+    * _Property-Based Testing tries to combine the intuitiveness of Microtests with the effectiveness of randomized, generated test data. Originally driven by the common hype about functional programming, PBT has meanwhile been recognized as an important ingredient of any up-to-date testing approach._
+
+#### 17 Oct 2022 - 
+* [Gist for Redis multiset with expiry](https://gist.github.com/veselin-vasilev/4ee80b31c3961fdf8be3756d448528d2)
+* [Gist Mockito callback argument matching](https://gist.github.com/veselin-vasilev/00493e3ad1d7b68154ba7c0ad671d497)
+
+
+#### 03 Oct 2022 - 
+* [Pluralsight's getting started with JShell, some useful tidbits in there](https://www.pluralsight.com/guides/getting-started-with-jshell-part-3) ✅
+* [JShell Tutorial](http://cr.openjdk.java.net/~rfield/tutorial/JShellTutorial.html#introduction)
+  * Quite a comprehensive tutorial, the Pluralsight is based on it, so this could be treated as the "source of truth".
+
+#### 26 Sep 2022 - 
+* [Microservices and the Inverse Conway Manoeuvre • James Lewis • GOTO 2015](https://www.youtube.com/watch?v=uicjqeZO690) ✅
+  * "_There is nothing so useless as doing efficiently that which should not be done at all_" - Peter Drucker
+  * The talk can pretty much be summarised with: _"Design the organisation you want, the architecture will follow (kicking and screaming)" - The Inverse Conway Manoeuvre_ - Evan Botcher.
+  * He's essentially saying what's been said by many agile/DevOps practitioners - put the people who need to work together - together. Remove the artificial walls between departments (IT, Finance, Customer, etc.) and unite people around products. It's cross-functionality at a higher abstraction than a software team. A lot of organisations brought QA ands and Devs and BAs etc. and the next logical step is to bring together everyone else who is needed to build a product. 
+  * He also talked about the difference in mindset between "project thinking" and "product thinking". Essentialy project thinking is a short-term view of "let's get together to solve a task and move on", and that's not a great way to approach software systems. Further explained by this quote: "_Most application development efforts that we see use a project model: where the aim is to deliver some piece of software which is then considered to be completed. On completion the software is handed over to a maintenance organization and the project team that built it is disbanded._" from [Microservices](https://martinfowler.com/articles/microservices.html) on Martin Fowler's website.
+    * The product thinking mindset is captured by this quote: "_The product mentality, ties in with the linkage to business capabilities. Rather than looking at the software as a set of functionality to be completed, there is an on-going relationship where the question is how can software assist its users to enhance the business capability._"
+  * #microservices
+* [Gist for StructuredArguments and Markers and integration with DD](https://gist.github.com/veselin-vasilev/6ae2320a0c4f8bdbe8ece2284c38961b)
+* [Gist for IntelliJ Search and Replace Regex](https://gist.github.com/veselin-vasilev/ab25d06879cecf19c3bd9fc1cae0e8b1)
+* [Gist for GitHub Workflow templates](https://gist.github.com/veselin-vasilev/a561d6a51764c9999f8144d8c6cd8f86)
+* [Gist for Java time API tidbits](https://gist.github.com/veselin-vasilev/92bb56531ee4ffac1d37eaef5f7d5adc) 
+
+#### 19 Sep 2022
+* [Applying the Saga Pattern • Caitie McCaffrey • GOTO 2015](https://www.youtube.com/watch?v=xDuwrtwYHu8) ✅
+  * A great overview and demo of the Saga pattern.
+  * "_A Saga is a Long Lived Transaction that can be written as a sequence of transactions that can be interleaved. All transactions in the sequence complete successfully or compensating transactions are ran to amend a partial execution_"
+  * "_Sagas are a Failure Management Patter_"
+  * #distributed-systems
+
+#### 12 Sep 2022 - 
+* Spring Boot [Relaxed Binding](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.external-config.typesafe-configuration-properties.relaxed-binding)
+  * _Spring Boot uses some relaxed rules for binding Environment properties to @ConfigurationProperties beans, so there does not need to be an exact match between the Environment property name and the bean property name. Common examples where this is useful include dash-separated environment properties (for example, context-path binds to contextPath), and capitalized environment properties (for example, PORT binds to port)._
+  * Also should be noted that kebab-case is the recommended syntax in `.properties` and `.yml` files (outlined in Table 3 and the `Tip` section at time of writing). Useful if you ever need a reference for this with regards to Spring Boot.
+  * #spring-boot
+  * [Relaxed Binding 2.0](https://github.com/spring-projects/spring-boot/wiki/Relaxed-Binding-2.0) highlights some interesting properties of how Spring does relaxed binding. The thing that tripped me up originally was YAML maps - it would remove some characters from the keys, such as forward slash (`/`). To stop it from doing so, I had to wrap the key in `[]`.
+    * Related SO questions:
+      * https://stackoverflow.com/questions/51289856/spring-application-properties-ignoring-slashes-in-strings
+      * https://stackoverflow.com/questions/65346054/ignore-specify-slash-character-in-yaml-config-for-spring-boot-admin-application 
+
+#### 05 Sep 2022 - 
+* [The Canada Principle](https://marcrandolph.com/the-canada-principle/)✅
+  * First heard about it in [[Marc Randolph]]'s book [[That will never work]] about Netflix's early years.
+  * This is a handly link to sum it up nicely. 
+  * *We called this The Canada Principle and it served as a constant reminder to us to make sure we didn’t run around chasing what appeared to be low hanging fruit, all the while taking our eyes off what was truly important in scaling our business.*
+  * \#guidelines
+* [From Monolith to State-of-the-Art Banking • Flavio Deroo • GOTO 2022](https://www.youtube.com/watch?v=gVucnhnyYTw)✅ 
+  * [16:00] - quite an interesting point about how they handle their events by aggregating all past events in the last event.
+    * Each event chain has an `aggregate_id` and a `sequence` number. 
+    * This forces events to be read/processed in sequence, but it gives you immutability guarantees because of the append-only nature of the flow.
+      * *Is there a danger that events will become too big?*
+    * Overall it was a good session, especially the middle part where he talked about Event-Sourcing and the different projections they have on top of the events.
+* [Microservices to async processing migration at scale](https://www.infoq.com/presentations/migration-microservices-scale/)✅
+  * If you need to guarantee you get the most robust results, you might require an acknowledgment from all brokers
+      * However, this takes time!
+  * ![](images/Challenges in.png)
+  * Processing latencies
+      * You can provision for peak and handle any load which comes your way
+          * Good if you have a relatively static load without many large surges.
+      * Or, you can autoscale
+  * Autoscaling your consumers
+      * The tradeoff there is resource efficiency vs taking the hit on partition rebalancing (i.e. the rebalance process takes time and slows down the overall process)
+      * If you’re doing stateful operations, you have more work do to during a rebalance
+          * When you get the rebalance indication, you need to both commit your Kafka offsets, and also ensure to pass on whatever state you have, so it can be reloaded from another consumer after the rebalance.
+      * If you’re doing stateless operations, or you persist state externally, then you will likely be fine letting the rebalance go its way automatically.
+          * Worst case is you might get into a situation where you haven’t committed that you’ve handled some messages, which means that another consumer will pick these up (when it gets assigned the same partition) and process them again. If your processing is idempotent, or you don’t care about duplicates, then you have no issue.
+      * Lag might be considered a good metric to determine the , and it is good to scale up, but it is difficult to scale down based on it. If your lag is 0, how do you know how much to scale down? You can flip-flop between the number of consumers, that’s a lot of overhead.
+      * Proxy metrics - CPU or rps (records per second) work better
+          * Rps - based on how many records are processed per second, so based on that you can decide whether to add a new node based on that
+      * A few rebalances a day are okay, more means you’re spending a lot of time repartitioning/processing duplicate records.
+      * Netflix autoscaler aggressively scales up when the load increases, because they don’t want to be scaling up during a high-load period. They scale down slowly later.
+  * ![](images/Small error rates can be retried.png)
+  * ![](images/One region for all events of a session.png)
+  * ![](images/Local publish with async router.png)
+  * What I don’t get for the ^ is why will the remote publish not work when it’s through a tunnel directly to a remote Kafka cluster, but it will work when publishing locally, and then the Region Router passing it to the other region? If US-East is down, so is the Region Router - so what’s the difference?
+      * He says “all events of a single playback session can be processed together” - but why is this not possible with the remote tunnel?
+  * #kafka #distributed-systems 
+* [event-ruler](https://github.com/aws/event-ruler/)
+  * [AWS Announcement](https://aws.amazon.com/blogs/opensource/open-sourcing-event-ruler/)
+  * Looks really cool, could be a way to handle generic events/requests coming through and generating actions from them.
+  * #tools
+
 #### April - August 2022
 * [How to filter a stream of events](https://developer.confluent.io/tutorials/filter-a-stream-of-events/kstreams.html#run-your-app-to-confluent-cloud)✅
   * Describes different approaches to filter a stream using Kafka - Streams, ksqlDB.

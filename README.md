@@ -1,3 +1,10 @@
+### 21 Nov 2022
+* [Evolutionary Database Design](https://www.martinfowler.com/articles/evodb.html) ✅
+  * A good read, which lays out a number of best practices when dealing with databases and managing their evolution. 
+  * What was interesting to me was the fact that I already know and follow pretty much all of them. It seems like the world of software development (or at least the parts of it I've been in) has moved on quite a bit and what is described in this article is the norm, not an exception. I'm used to working with tools like Liquibase and Flyway to perform database migrations; the architectures I'm working and designing generally dedicate a database per service; migration scripts are kept together with the rest of the application code, or at the very least - are in their own source code repository.
+  * There wasn't really anything there to learn, but it is a good resource to reference when discussing these topics with other people.
+  * #databases
+
 ### 24 Oct 2022 - 
 * Property-based testing
   * A colleague presented this approach to testing at work, and I thought it is quite interesting. Not necessarily something that applies to all scenarios, but when it does, it can be quite helpful.

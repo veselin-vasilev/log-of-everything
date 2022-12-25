@@ -1,4 +1,9 @@
-### 21 Nov 2022
+### 5 Dec 2022 -  
+* [Gist](https://gist.github.com/veselin-vasilev/2160b58ac4506620e49442265a0f2419) for `DefaultErrorAttributes` in Spring Boot.
+* [Modular Design lecture notes](https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/lecture.php?topic=modularDesign) ✅ from [[John Ousterhout]]'s course in Stanford. Can be quite useful when referencing deep vs shallow classes in discussions, as it doesn't require the book.
+  * #engineering
+
+### 21 Nov 2022 -
 * [Evolutionary Database Design](https://www.martinfowler.com/articles/evodb.html) ✅
   * A good read, which lays out a number of best practices when dealing with databases and managing their evolution. 
   * What was interesting to me was the fact that I already know and follow pretty much all of them. It seems like the world of software development (or at least the parts of it I've been in) has moved on quite a bit and what is described in this article is the norm, not an exception. I'm used to working with tools like Liquibase and Flyway to perform database migrations; the architectures I'm working and designing generally dedicate a database per service; migration scripts are kept together with the rest of the application code, or at the very least - are in their own source code repository.

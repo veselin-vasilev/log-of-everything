@@ -7,7 +7,7 @@
   * “_This is something it took me a long time to learn: just because we can fix something, just because it would be helpful, doesn't mean we should do it any time soon. We can leave some things broken. We can nod to them every day as we walk past and see them still there. “Yup, you are still broken. Yup, that will continue to bug me. But I'm going to resist._”
     * Awesome way to put into words what I mean sometimes when I ask “is it worth it”? I’m essentially doing a different variation if the 5 whys referenced in the article itself. 
     * For example the cold start JVM issue we were seeing at work - yeah, we could look into solving this - but do we need to? Is this the most important piece we need to focus  on? What is the opportunity cost of doing it?
-  * “If you love the project, you have to set it free. Even if you know in your heart you were meant to be together! Even if you would do this project best of all. Sometimes you have to let other people do things that you would do better.”
+  * “_If you love the project, you have to set it free. Even if you know in your heart you were meant to be together! Even if you would do this project best of all. Sometimes you have to let other people do things that you would do better._”
     * Discovering this more and more in my career…
   * “_Wrong gets corrected. Handwavy lasts until you try to integrate your system with someone else's system and discover that you meant different things and someone just wasted a quarter. It takes time to disagree, but it takes longer to not disagree and end up going down the wrong path._”
     * Pure gold right there.

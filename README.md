@@ -1,6 +1,7 @@
 ### 25.12.22
 * [The Staff Engineer's Path list of links](https://noidea.dog/staff-resources)
   * Just a list of all links Tanya has referenced in the book. Useful for reference, and just as a standalone link farm honestly - most resources there automatically go on the reading list. 
+* Tanya's controbutions to the Staff topic are layed out in the "Further reading" section in the [book page](https://noidea.dog/#/staff/) on her website.
 
 ### 24 Dec 2022
 * [Tanya Reilly's Continuous Presentation](https://noidea.dog/#/continuous/) ✅

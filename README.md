@@ -1,3 +1,10 @@
+### 26.12.22
+* [The Maybe Great Idea](https://noidea.dog/#/maybe-great/) ✅
+  * A great intro/overview of RFCs, and RFc-driven engineering organisations by Tabya Reilly. Some great lessons shared, with some more food for thought for the future. 
+  * The specific RFC template (even though it has caveats) she referenced looks alright and might be something I adapt and adopt at work. 
+  * I don't have the authority and influence yet to introduce a council or an architecture review panel, but I liked how she spelled out what they were for, and what worked and what didn't. 
+  * Definitely an article I'll reference again and again, also tying it with Gergeky Orosz's article in RFCs - [Scaling Engineering Teams via RFCs: Writing Things Down](https://blog.pragmaticengineer.com/scaling-engineering-teams-via-writing-things-down-rfcs/)
+
 ### 25.12.22
 * [The Staff Engineer's Path list of links](https://noidea.dog/staff-resources)
   * Just a list of all links Tanya has referenced in the book. Useful for reference, and just as a standalone link farm honestly - most resources there automatically go on the reading list. 

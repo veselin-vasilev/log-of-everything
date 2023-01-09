@@ -1,6 +1,8 @@
 ### 09.01.23
 * [No Whiteboard](https://www.nowhiteboard.org/) - search for jobs that don't require whiteboarding interviews. I guess this is the next level from the GitHub list I found last year. Good to keep in mind!
   * #interviewing 
+* [Reddit answer on how to approach whiteboarding interviews](https://www.reddit.com/r/ExperiencedDevs/comments/106xbng/unable_to_get_past_the_coding_interview_rounds/j3k6j2u/?utm_source=share&utm_medium=ios_app&utm_name=iossmf&context=3) - a truly great write up. It generally maps to what I've observed as well, and it puts it succinctly. I like the 6 boxes approach - I've used some boxes before, but not all together. It's a nice, structured way of thinking about things, and some of it can be applied to other types of interviews, for example System Design. 
+  * #interviewing
 
 ### 26.12.22
 * [The Maybe Great Idea](https://noidea.dog/#/maybe-great/) ✅

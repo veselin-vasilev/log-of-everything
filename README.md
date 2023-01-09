@@ -1,3 +1,7 @@
+### 09.01.23
+* [No Whiteboard](https://www.nowhiteboard.org/) - search for jobs that don't require whiteboarding interviews. I guess this is the next level from the GitHub list I found last year. Good to keep in mind!
+  * #interviewing 
+
 ### 26.12.22
 * [The Maybe Great Idea](https://noidea.dog/#/maybe-great/) ✅
   * A great intro/overview of RFCs, and RFc-driven engineering organisations by Tabya Reilly. Some great lessons shared, with some more food for thought for the future. 

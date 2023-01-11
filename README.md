@@ -1,3 +1,38 @@
+### 21 Nov 2022 -
+### 09.01.23
+* [No Whiteboard](https://www.nowhiteboard.org/) - search for jobs that don't require whiteboarding interviews. I guess this is the next level from the GitHub list I found last year. Good to keep in mind!
+  * #interviewing 
+* [Reddit answer on how to approach whiteboarding interviews](https://www.reddit.com/r/ExperiencedDevs/comments/106xbng/unable_to_get_past_the_coding_interview_rounds/j3k6j2u/?utm_source=share&utm_medium=ios_app&utm_name=iossmf&context=3) - a truly great write up. It generally maps to what I've observed as well, and it puts it succinctly. I like the 6 boxes approach - I've used some boxes before, but not all together. It's a nice, structured way of thinking about things, and some of it can be applied to other types of interviews, for example System Design. 
+  * #interviewing
+
+### 26.12.22
+* [The Maybe Great Idea](https://noidea.dog/#/maybe-great/) ✅
+  * A great intro/overview of RFCs, and RFc-driven engineering organisations by Tabya Reilly. Some great lessons shared, with some more food for thought for the future. 
+  * The specific RFC template (even though it has caveats) she referenced looks alright and might be something I adapt and adopt at work. 
+  * I don't have the authority and influence yet to introduce a council or an architecture review panel, but I liked how she spelled out what they were for, and what worked and what didn't. 
+  * Definitely an article I'll reference again and again, also tying it with Gergeky Orosz's article in RFCs - [Scaling Engineering Teams via RFCs: Writing Things Down](https://blog.pragmaticengineer.com/scaling-engineering-teams-via-writing-things-down-rfcs/)
+
+### 25.12.22
+* [The Staff Engineer's Path list of links](https://noidea.dog/staff-resources)
+  * Just a list of all links Tanya has referenced in the book. Useful for reference, and just as a standalone link farm honestly - most resources there automatically go on the reading list. 
+* Tanya's contributions to the Staff topic are layed out in the "Further reading" section in the [book page](https://noidea.dog/#/staff/) on her website.
+
+### 24 Dec 2022
+* [Tanya Reilly's Continuous Presentation](https://noidea.dog/#/continuous/) ✅
+  * Lots of great nuggets in there. Truly something worth revisiting often. It contains great career advice and demonstrates the kind of culture and thinking I like to foster and be a part of.
+  * Be nice, but very importantly - be kind as well. 
+    * “_Kind is about being invested in other people, figuring out how to help them, meeting them where they are. Nice says "good job in the meeting." Kind says "your answer to the question was a bit rambly and you missed the opportunity to convince the team about your idea. But it is a good idea so practice your elevator pitch._"
+  * “_… a lot of the time, you're not working on a project for the sake of the project. You're working on it for the thing it unlocks._”
+  * “_This is something it took me a long time to learn: just because we can fix something, just because it would be helpful, doesn't mean we should do it any time soon. We can leave some things broken. We can nod to them every day as we walk past and see them still there. “Yup, you are still broken. Yup, that will continue to bug me. But I'm going to resist._”
+    * Awesome way to put into words what I mean sometimes when I ask “is it worth it”? I’m essentially doing a different variation if the 5 whys referenced in the article itself. 
+    * For example the cold start JVM issue we were seeing at work - yeah, we could look into solving this - but do we need to? Is this the most important piece we need to focus  on? What is the opportunity cost of doing it?
+  * “_If you love the project, you have to set it free. Even if you know in your heart you were meant to be together! Even if you would do this project best of all. Sometimes you have to let other people do things that you would do better._”
+    * Discovering this more and more in my career…
+  * “_Wrong gets corrected. Handwavy lasts until you try to integrate your system with someone else's system and discover that you meant different things and someone just wasted a quarter. It takes time to disagree, but it takes longer to not disagree and end up going down the wrong path._”
+    * Pure gold right there.
+  * “_The skills that will never go away are talking to other humans, learning and deliberately choosing a destination._”
+
+
 ### 5 Dec 2022 -  
 * [Gist](https://gist.github.com/veselin-vasilev/2160b58ac4506620e49442265a0f2419) for `DefaultErrorAttributes` in Spring Boot.
 * [Modular Design lecture notes](https://web.stanford.edu/~ouster/cgi-bin/cs190-winter18/lecture.php?topic=modularDesign) ✅ from [[John Ousterhout]]'s course in Stanford. Can be quite useful when referencing deep vs shallow classes in discussions, as it doesn't require the book.

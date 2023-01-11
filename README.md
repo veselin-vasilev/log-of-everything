@@ -1,4 +1,9 @@
-### 21 Nov 2022 -
+### 11 Jan 2023
+* [Alternative JAR Entry Points Using Java Dependency Injection Frameworks](https://aws.amazon.com/blogs/opensource/alternative-jar-entry-points-using-a-dependency-injection-framework-for-existing-java-applications/) ✅ 
+  * While definitely an interesting pattern, and I learned some interesting bits about the Java entry points, I would avoid this pattern in production systems. I'm sure there are cases where it might be useful, but in general it's a hack to change the behaviour of an existing application in a relatively undocumented way - people generally don't look at an application's Main class and expect business logic there. It's also hard to scale - in the example, it's not a big deal, the logic computes a number and prints it. However, real world use cases would have more complex requirements and scaling code like that in the Main class will inevitably end up getting ugly. 
+  * If I had a use case like that, and I was using Spring Boot, I would first try to see if [multiple application contexts](https://www.baeldung.com/spring-boot-context-hierarchy) could do the work for me - so I can share the bean I want between the contexts and expose the logic as what will essentially be 2 separate Spring Boot applications. _Caveat: I haven't done this actually, just thinking out loud._
+  * #java #spring-boot 
+
 ### 09.01.23
 * [No Whiteboard](https://www.nowhiteboard.org/) - search for jobs that don't require whiteboarding interviews. I guess this is the next level from the GitHub list I found last year. Good to keep in mind!
   * #interviewing 

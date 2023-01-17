@@ -1,3 +1,19 @@
+17 Jan 2023
+* [Distributed transaction patterns for microservices compared](https://developers.redhat.com/articles/2021/09/21/distributed-transaction-patterns-microservices-compared)
+  * Great overview, with some useful links for deep dives. It nicely compares the different approach to ensuring dual writes across boundaries and systems. It pulls in different patterns I've seen before in a single place, which is a good reference. However, for properly learning each pattern, it is likely not enough - deep dives are needed for each pattern. 
+  * Highlights differences between orchestration and choreography.
+  * Perhaps the most useful part of this was the section titled "How to choose a distributed transactions strategy" - it gives a good summary of the overall article, and it gives practical advice for how to make the choice. 
+  * This was a nice quote: "_In the end, it doesn't matter what strategy you pick; what matters is choosing a strategy deliberately for the right reasons, and executing it._"
+  * #distributed-systems
+
+### 13 Jan 2023
+* [Data Sharing Patterns with Confluent Schema Registry](https://www.confluent.io/blog/data-sharing-patterns-with-confluent-schema-registry/?_ga=2.97592607.1027676761.1673434240-1152280350.1658155857) ✅
+  * Some interesting learnings in there, but not immediately useful to me at this point. However, could be useful as a reference later on.
+  * Mostly concerned with how data can be shared between multiple Schema Registries, introducing several patterns:
+    * Hub to spoke
+    * Spoke to hub
+    * Disaster recovery
+
 ### 11 Jan 2023
 * [Alternative JAR Entry Points Using Java Dependency Injection Frameworks](https://aws.amazon.com/blogs/opensource/alternative-jar-entry-points-using-a-dependency-injection-framework-for-existing-java-applications/) ✅ 
   * While definitely an interesting pattern, and I learned some interesting bits about the Java entry points, I would avoid this pattern in production systems. I'm sure there are cases where it might be useful, but in general it's a hack to change the behaviour of an existing application in a relatively undocumented way - people generally don't look at an application's Main class and expect business logic there. It's also hard to scale - in the example, it's not a big deal, the logic computes a number and prints it. However, real world use cases would have more complex requirements and scaling code like that in the Main class will inevitably end up getting ugly. 
